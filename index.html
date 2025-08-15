@@ -28,6 +28,11 @@
         }
       }
     </script>
+    <script>
+    function fallbackToInitials(imgEl, initials) {
+        imgEl.outerHTML = `<div class=\"w-52 h-52 md:w-64 md:h-64 rounded-3xl ring-1 ring-slate-200 dark:ring-slate-800 flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-4xl font-semibold\">${initials}</div>`;
+      }
+    </script>
     <!-- Inter & Source Serif -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +69,6 @@
     <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
       <div class="max-w-5xl mx-auto px-4 py-3 flex items-center gap-4">
         <div class="flex items-center gap-3">
-          <img src="/assets/headshot.jpg" alt="Your Name headshot" class="w-9 h-9 rounded-full ring-1 ring-slate-200 dark:ring-slate-800 object-cover" onerror="this.style.display='none'"/>
           <a href="#" class="font-semibold">Luis Sierra Muntané</a>
           <span class="hidden sm:inline text-slate-500 dark:text-slate-400">·</span>
           <span class="hidden sm:inline text-slate-600 dark:text-slate-300">PhD Candidate, University of Toronto</span>
@@ -94,7 +98,7 @@
           </div>
         </div>
         <div class="justify-self-center md:justify-self-end">
-          <img src="/assets/headshot.jpg" alt="Your Name headshot" class="w-52 h-52 md:w-64 md:h-64 rounded-3xl object-cover ring-1 ring-slate-200 dark:ring-slate-800" />
+          <img src="/assets/headshot.jpg" alt="Your Name headshot" class="w-9 h-9 rounded-full ring-1 ring-slate-200 dark:ring-slate-800 object-cover" onerror="fallbackToInitials(this, 'LS')"/>
         </div>
       </section>
 
@@ -175,7 +179,7 @@
       <ul class="mt-4 grid md:grid-cols-2 gap-3 text-sm">
         <li class="p-3 border border-slate-200 dark:border-slate-800 rounded-xl">
           <strong> STA2201: Methods of Applied Statistics II (Winter, 2026) </strong><br>
-          Role: TA. Instructor: Elena Tuzhilina.
+          Role: TA. Instructor: Elena Tuzhilina. Graduate level course in methods for high dimensional learning.
         </li>
         <li class="p-3 border border-slate-200 dark:border-slate-800 rounded-xl">
           <strong> STA414: Statistical Methods for Machine Learning II (Winter, 2026)</strong><br>
