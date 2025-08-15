@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Name — Academic Homepage</title>
+    <title>Luis Sierra Muntané — Academic Website</title>
     <meta name="description" content="Academic homepage of Your Name: research, publications, teaching, and contact." />
 
     <!-- Open Graph / Twitter -->
-    <meta property="og:title" content="Your Name — Academic Homepage" />
+    <meta property="og:title" content="Luis Sierra Muntané — Academic Website" />
     <meta property="og:description" content="Research, publications, teaching, and contact." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/assets/og-image.jpg" />
@@ -36,6 +36,13 @@
     <style>
       /* Smooth dark-mode transition */
       * { transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
+      /* Style for external links */
+      a[href^="http"] {
+        color: var(--link-color-light, #1d4ed8);
+      }
+      .dark a[href^="http"] {
+        color: var(--link-color-dark, #93c5fd);
+      }
     </style>
 
     <script>
@@ -58,9 +65,9 @@
       <div class="max-w-5xl mx-auto px-4 py-3 flex items-center gap-4">
         <div class="flex items-center gap-3">
           <img src="/assets/headshot.jpg" alt="Your Name headshot" class="w-9 h-9 rounded-full ring-1 ring-slate-200 dark:ring-slate-800 object-cover" onerror="this.style.display='none'"/>
-          <a href="#" class="font-semibold">Your Name</a>
+          <a href="#" class="font-semibold">Luis Sierra Muntané</a>
           <span class="hidden sm:inline text-slate-500 dark:text-slate-400">·</span>
-          <span class="hidden sm:inline text-slate-600 dark:text-slate-300">Your Role, Institution</span>
+          <span class="hidden sm:inline text-slate-600 dark:text-slate-300">PhD Candidate, University of Toronto</span>
         </div>
         <nav class="ml-auto flex items-center gap-4 text-sm">
           <a href="#research" class="hover:underline">Research</a>
@@ -77,12 +84,13 @@
       <!-- Hero -->
       <section class="py-10 md:py-16 grid md:grid-cols-[1fr,260px] gap-8 items-center">
         <div>
-          <h1 class="text-3xl md:text-5xl font-semibold tracking-tight">Your Name</h1>
-          <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">I’m a <strong>your role</strong> at <strong>Your Institution</strong>. My research focuses on <em>topic A</em>, <em>topic B</em>, and <em>topic C</em>. I build methods that <span class="underline decoration-dotted">one-sentence impact statement</span>.</p>
+          <h1 class="text-3xl md:text-5xl font-semibold tracking-tight">Luis Sierra Muntané</h1>
+          <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">I’m a <strong>PhD Student</strong> in Statistical Sciences at the <strong>University of Toronto</strong>, where I am fortunate to be advised by <a href=https://elenatuzhilina.github.io/>Elena Tuzhilina</a>. My research focuses on <em>High-Dimensional Statistics</em>, <em>Convex Optimization</em>, and <em>topic C</em>. I build methods that <span class="underline decoration-dotted">find patterns in noisy systems with many variables.</span>.</p>
+          <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">Before joining UofT, I graduated with a double degree in Mathematics and Data Science from UPC supported by a <a href=https://www.upc.edu/en/the-upc/schools/cfis>CFIS scholarship</a>, during which I had the great opportunity of working at the University of Toronto under a CFIS international mobility scholarship with <a href=https://pzwiernik.github.io/> Piotr Zwiernik</a>. I also received a Master’s in Applied Mathematics from UPC while working with the research group <a href=https://interact-erc.github.io>INTERACT</a>, advised by <a href=https://ariadnaquattoni.github.io/>Ariadna Quattoni</a>.</p>
           <div class="mt-5 flex flex-wrap gap-3">
             <a href="#publications" class="inline-flex items-center rounded-xl px-4 py-2 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900">View publications</a>
-            <a href="/assets/YourName_CV.pdf" class="inline-flex items-center rounded-xl px-4 py-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900">Download CV</a>
-            <a href="mailto:you@university.edu" class="inline-flex items-center rounded-xl px-4 py-2 border border-slate-200 dark:border-slate-800">Email</a>
+            <a href="/assets/CV_Luis_Sierra.pdf" class="inline-flex items-center rounded-xl px-4 py-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900">Download CV</a>
+            <a href="mailto:luis.sierra@mail.utoronto.ca" class="inline-flex items-center rounded-xl px-4 py-2 border border-slate-200 dark:border-slate-800">Email</a>
           </div>
         </div>
         <div class="justify-self-center md:justify-self-end">
@@ -96,20 +104,20 @@
         <p class="mt-3 text-slate-600 dark:text-slate-300 max-w-3xl">Broadly, I’m interested in <strong>area 1</strong>, <strong>area 2</strong>, and <strong>area 3</strong>. Current projects include:</p>
         <ul class="mt-3 grid md:grid-cols-2 gap-3">
           <li class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
-            <h3 class="font-medium">Project One</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300">One-line description with what’s new and why it matters.</p>
+            <h3 class="font-medium">Tensors in Algebraic Statistics</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">How does a deeper understanding of tensor geometry allow for an understanding and methods in Algebraic Statistics.</p>
           </li>
           <li class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
-            <h3 class="font-medium">Project Two</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300">One-line description with what’s new and why it matters.</p>
+            <h3 class="font-medium">Degrees of freedom in matrix completion problems</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Are all entries in a matrix equally important? How do different methods affect the geometry of solutions in matrix approximations?</p>
           </li>
           <li class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
-            <h3 class="font-medium">Project Three</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300">One-line description with what’s new and why it matters.</p>
+            <h3 class="font-medium">Recovering discrete spectra in random matrices</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Old problems, modern approaches.</p>
           </li>
           <li class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
-            <h3 class="font-medium">Open to collaborations</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300">If you’d like to collaborate or co-advise a student, please reach out.</p>
+            <h3 class="font-medium"><font color="#1d9936">Open to collaborations</font></h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">If you’d like to collaborate or co-advise a student, don't hesitate to reach out!</p>
           </li>
         </ul>
       </section>
@@ -124,7 +132,7 @@
           <!-- Repeat block per paper -->
           <li class="p-5 border border-slate-200 dark:border-slate-800 rounded-2xl">
             <div class="flex flex-wrap items-baseline gap-x-2">
-              <span class="font-medium">Paper Title One</span>
+              <span class="font-medium">Tensors in Algebraic Statistics</span>
               <span class="text-slate-500 dark:text-slate-400">(Conference/Journal, 2024)</span>
             </div>
             <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Author A*, <strong>Your Name*</strong>, Author C. One-sentence summary of the contribution. <span class="text-xs text-slate-500">(* equal contribution)</span></p>
@@ -163,26 +171,38 @@
 
       <!-- Teaching & service -->
       <section id="teaching" class="py-10 border-t border-slate-200/70 dark:border-slate-800">
-        <h2 class="text-2xl font-semibold">Teaching & service</h2>
-        <div class="mt-4 grid md:grid-cols-2 gap-4">
-          <div class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
-            <h3 class="font-medium">Course Name (Term, Year)</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300">Role: Instructor/TA. Brief description or link to course materials.</p>
-          </div>
-          <div class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
-            <h3 class="font-medium">Program committee / Reviewing</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300">Venues or journals you review for.</p>
-          </div>
-        </div>
-      </section>
+      <h2 class="text-2xl font-semibold">Teaching & service</h2>
+      <ul class="mt-4 grid md:grid-cols-2 gap-3 text-sm">
+        <li class="p-3 border border-slate-200 dark:border-slate-800 rounded-xl">
+          <strong> STA2201: Methods of Applied Statistics II (Winter, 2026) </strong><br>
+          Role: TA. Instructor: Elena Tuzhilina.
+        </li>
+        <li class="p-3 border border-slate-200 dark:border-slate-800 rounded-xl">
+          <strong> STA414: Statistical Methods for Machine Learning II (Winter, 2026)</strong><br>
+          Role: TA. Instructor: Chris Maddison.
+        </li>
+        <li class="p-3 border border-slate-200 dark:border-slate-800 rounded-xl">
+          <strong>STA 314: Statistical Methods for Machine Learning I (Fall, 2025)</strong><br>
+          Role: TA. Instructor: Xin Bing.
+        </li>
+        <li class="p-3 border border-slate-200 dark:border-slate-800 rounded-xl">
+          <strong>STA 437: <a href="https://pzwiernik.github.io/sta437/"> Methods for Multivariate Data </a> (Winter, 2025)</strong><br>
+          Role: TA. Instructor: Piotr Zwiernik.
+        </li>
+        <li class="p-3 border border-slate-200 dark:border-slate-800 rounded-xl">
+          <strong> STA 314: <a href="https://courses.utstat.utoronto.ca/sta314_f24/"> Statistical Methods for Machine Learning I </a> (Fall, 2024) </strong><br>
+          Role: Instructor. Brief one-line description.
+        </li>
+      </ul>
+    </section>
 
       <!-- News -->
       <section id="news" class="py-10 border-t border-slate-200/70 dark:border-slate-800">
         <h2 class="text-2xl font-semibold">News</h2>
         <ul class="mt-3 space-y-2 text-sm">
-          <li>2025-08-11 — Started as Assistant Professor at University of Somewhere.</li>
-          <li>2025-05-20 — Paper accepted to Conference XYZ.</li>
-          <li>2024-10-02 — Defended my PhD!</li>
+          <li>2025-11-01 — Officially became a PhD candidate.</li>
+          <li>2025-05-20 — Paper accepted to SCM.</li>
+          <li>2024-09-01 — Started my PhD!</li>
         </ul>
       </section>
 
@@ -191,9 +211,9 @@
         <h2 class="text-2xl font-semibold">Contact</h2>
         <div class="mt-3 grid md:grid-cols-2 gap-4 text-sm">
           <div class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
-            <p><strong>Email:</strong> you@university.edu</p>
-            <p><strong>Office:</strong> Building, Room, Address</p>
-            <p><strong>Links:</strong> <a class="underline" href="#">Google Scholar</a> · <a class="underline" href="#">ORCID</a> · <a class="underline" href="#">GitHub</a> · <a class="underline" href="#">X/Twitter</a></p>
+            <p><strong>Email:</strong> luis.sierra@mail.utoronto.ca</p>
+            <p><strong>Office:</strong> Ontario Power Building, 10th floor, Address</p>
+            <p><strong>Links:</strong> <a class="underline" href="https://scholar.google.com/citations?user=iPLkrMoAAAAJ&hl=en">Google Scholar</a> · <a class="underline" href="#">ORCID</a> · <a class="underline" href="https://github.com/luis-sierra-muntane">GitHub</a> · <a class="underline" href="https://www.linkedin.com/in/luis-sierra-muntan%C3%A9-670103b6/">Linkedin</a></p>
           </div>
           <form class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl" name="contact" netlify>
             <p class="text-slate-600 dark:text-slate-300">Optional: This form works if you later deploy to Netlify. For GitHub Pages, leave as-is or replace with a mailto link.</p>
@@ -207,7 +227,7 @@
 
       <footer class="py-10 border-t border-slate-200/70 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400">
         <div class="flex flex-wrap items-center justify-between gap-2">
-          <p>&copy; <span id="year"></span> Your Name. Built with plain HTML + Tailwind CDN. Last updated <time id="lastUpdated"></time>.</p>
+          <p>&copy; <span id="year"></span> Luis Sierra Muntané. Built with plain HTML + Tailwind CDN. Last updated <time id="lastUpdated"></time>.</p>
           <p><a href="/feed.xml" class="underline">RSS</a></p>
         </div>
       </footer>
