@@ -39,16 +39,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
 
     <style>
-      /* Smooth dark-mode transition */
-      * { transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
-      /* Style for external links */
-      a {
-        color: var(--link-color-light, #1d4ed8);
-      }
-      .dark a[href^="http"] {
-        color: var(--link-color-dark, #93c5fd);
-      }
-    </style>
+  /* Smooth dark-mode transition */
+  * { 
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease; 
+  }
+  
+  /* Apply the same color to all links */
+  a {
+    color: var(--link-color-light, #1d4ed8); /* Default link color */
+  }
+  
+  /* Style for external links (optional if you want different color for external) */
+  .dark a[href^="http"] {
+    color: var(--link-color-dark, #93c5fd); /* Dark mode link color for external links */
+  }
+  
+  /* Optional: If you want internal links to have the same color as external links in dark mode */
+  .dark a[href^="/"] {
+    color: var(--link-color-dark, #93c5fd);
+  }
+</style>
 
     <script>
       // Theme: respect system preference, remember choice
