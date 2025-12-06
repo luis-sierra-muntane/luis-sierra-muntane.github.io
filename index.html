@@ -38,27 +38,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
 
-    <style>
-  /* Smooth dark-mode transition */
-  * { 
-    transition: background-color .2s ease, color .2s ease, border-color .2s ease; 
-  }
-  
-  /* Apply the same color to all links */
-  a {
-    color: var(--link-color-light, #1d4ed8); /* Default link color */
-  }
-  
-  /* Style for external links (optional if you want different color for external) */
-  .dark a[href^="http"] {
-    color: var(--link-color-dark, #93c5fd); /* Dark mode link color for external links */
-  }
-  
-  /* Optional: If you want internal links to have the same color as external links in dark mode */
-  .dark a[href^="/"] {
-    color: var(--link-color-dark, #93c5fd);
-  }
-</style>
+  <style>
+      /*<style>
+      /* Smooth dark-mode transition */
+      * { 
+        transition: background-color .2s ease, color .2s ease, border-color .2s ease; 
+      }
+    
+      /* Default style for all links (light mode) */
+      a {
+        color: var(--link-color-light, #ff3368); /* Light mode link color */
+      }
+    
+      /* Dark mode style for all links */
+      .dark a {
+        color: var(--link-color-dark, #93c5fd); /* Dark mode link color */
+      }
+    
+      /* Dark mode style for external links (http links) */
+      .dark a[href^="http"] {
+        color: var(--link-color-dark, #93c5fd); /* Dark mode color for external links */
+      }
+    
+      /* Optional: Dark mode style for internal links (relative paths) */
+      .dark a[href^="/"] {
+        color: var(--link-color-dark, #93c5fd); /* Dark mode color for internal links */
+      }
+  </style>
+
 
     <script>
       // Theme: respect system preference, remember choice
@@ -99,7 +106,7 @@
       <section class="py-10 md:py-16 grid md:grid-cols-[1fr,260px] gap-8 items-center">
         <div>
           <h1 class="text-3xl md:text-5xl font-semibold tracking-tight">Luis Sierra Muntané</h1>
-          <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">I’m a <strong>PhD Student</strong> in Statistical Sciences at the <strong>University of Toronto</strong>, where I am fortunate to be advised by <a href=https://elenatuzhilina.github.io/>Elena Tuzhilina</a>. My research focuses on <em>High-Dimensional Statistics</em>, <em>Tensors</em>, and <em>Convex Optimization</em>. I build methods that <span class="underline decoration-dotted">find patterns in noisy systems with many variables.</span>.</p>
+          <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">I’m a <strong>PhD Student</strong> in Statistical Sciences at the <strong>University of Toronto</strong>, where I am fortunate to be advised by <a href=https://elenatuzhilina.github.io/>Elena Tuzhilina</a>. My research focuses on <em>High-Dimensional Statistics</em>, <em>Tensors</em>, and <em>Convex Optimization</em>. I build methods that <span class="underline decoration-dotted">find patterns in noisy systems with many variables</span>.</p>
           <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">Before joining UofT, I graduated with a double degree in Mathematics and Data Science from UPC supported by a <a href=https://www.upc.edu/en/the-upc/schools/cfis>CFIS scholarship</a>, during which I had the great opportunity of working at the University of Toronto under a CFIS international mobility scholarship with <a href=https://pzwiernik.github.io/> Piotr Zwiernik</a>. I also received a Master’s in Applied Mathematics from UPC while working with the research group <a href=https://interact-erc.github.io>INTERACT</a>, advised by <a href=https://ariadnaquattoni.github.io/>Ariadna Quattoni</a>.</p>
           <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">I also have the honor of currently serving as the President of the <a href=https://sgsu-uoft.github.io/>Statistics Graduate Student Union</a>.</p>
           <div class="mt-5 flex flex-wrap gap-3">
