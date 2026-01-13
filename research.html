@@ -82,7 +82,7 @@
         <nav class="ml-auto flex items-center gap-4 text-sm">
           <a href="index.html" class="hover:underline">Home</a>
           <a href="/assets/CV_Luis_Sierra.pdf" class="hover:underline">CV</a>
-          <a href="research.html" class="hover:underline">Research</a>
+          <a href="#research" class="hover:underline">Research</a>
           <a href="teaching.html" class="hover:underline">Teaching</a>
           <button id="themeToggle" class="ml-2 rounded-xl px-3 py-1.5 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900" aria-label="Toggle dark mode">🌙</button>
         </nav>
@@ -90,60 +90,70 @@
     </header>
 
     <main id="main" class="max-w-5xl mx-auto px-4">
-      <!-- Hero -->
-      <section class="py-10 md:py-16 grid md:grid-cols-[1fr,260px] gap-8 items-center">
-        <div>
-          <h1 class="text-3xl md:text-5xl font-semibold tracking-tight">Luis Sierra Muntané</h1>
-          <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">I’m a <strong>PhD Student</strong> in Statistical Sciences at the <strong>University of Toronto</strong>, where I am fortunate to be advised by <a href=https://elenatuzhilina.github.io/>Elena Tuzhilina</a>. My research focuses on <em>High-Dimensional Statistics</em>, <em>Tensors</em>, and <em>Convex Optimization</em>. I build methods that <span class="underline decoration-dotted">find patterns in noisy systems with many variables</span>.</p>
-          <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">Before joining UofT, I graduated with a double degree in Mathematics and Data Science from UPC supported by a <a href=https://www.upc.edu/en/the-upc/schools/cfis>CFIS scholarship</a>, during which I had the great opportunity of working at the University of Toronto under a CFIS international mobility scholarship with <a href=https://pzwiernik.github.io/> Piotr Zwiernik</a>. I also received a Master’s in Applied Mathematics from UPC while working with the research group <a href=https://interact-erc.github.io>INTERACT</a>, advised by <a href=https://ariadnaquattoni.github.io/>Ariadna Quattoni</a>.</p>
-          <p class="mt-3 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">I have the honor of currently serving as the President of the <a href=https://sgsu-uoft.github.io/>Statistics Graduate Student Union</a> and coordinator of the <a href=https://sgsu-uoft.github.io/drp.html>Statistics Directed Reading Program</a>.</p>
-          <div class="mt-5 flex flex-wrap gap-3">
-            <a href="research.html" class="inline-flex items-center rounded-xl px-4 py-2 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900">View publications</a>
-            <a href="/assets/CV_Luis_Sierra.pdf" class="inline-flex items-center rounded-xl px-4 py-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900">Download CV</a>
-            <a href="mailto:luis.sierra@mail.utoronto.ca" class="inline-flex items-center rounded-xl px-4 py-2 border border-slate-200 dark:border-slate-800">Email</a>
-          </div>
-        </div>
-        <div class="justify-self-center md:justify-self-end">
-          <img src="/assets/website_photo.png" alt="Your Name headshot"
-               class="w-64 h-64 md:w-72 md:h-72 rounded-3xl object-cover ring-1 ring-slate-200 dark:ring-slate-800"
-               onerror="fallbackToInitials(this, 'LS')" />
-        </div>
-      </section>
-
-      <!-- News -->
-      <section id="news" class="py-10 border-t border-slate-200/70 dark:border-slate-800">
-        <h2 class="text-2xl font-semibold">News</h2>
-        <ul class="mt-3 space-y-2 text-sm">
-          <li>2025-12-09 — Presenting at the DoSS Bayesian Reading Group about <a href="/assets/BRG_Stein_Method.pdf" class="special-link">Sample Quality with Stein's Method</a>.</li>
-          <li>2025-11-27 — Officially became a PhD candidate.</li>
-          <li>2025-11-22 — Served as a judge in the UTSRI Case Competition.</li>
-          <li>2025-11-05 — Attended the Optimal Transport conference at the Fields Institute.</li>
-          <li>2025-10-02 — Presented at the DoSS Applied Statistics Reading Group on the <a href="/assets/Lasso.pdf" class="special-link">Lasso</a>.</li>
-          <li>2025-09-16 — Elected President of the SGSU.</li>
-          <li>2025-05-20 — Paper accepted to SCM.</li>
-          <li>2024-09-01 — Started my PhD!</li>
+      
+      <!-- Research interests -->
+      <section id="research" class="py-10 border-t border-slate-200/70 dark:border-slate-800">
+        <h2 class="text-2xl font-semibold">Research</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300 max-w-3xl">Broadly, I’m interested in the intersection of <strong>statistical methods</strong>, <strong>commutative algebra</strong>, and <strong>geometric tools</strong>. Current projects include:</p>
+        <ul class="mt-3 grid md:grid-cols-2 gap-3">
+          <li class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
+            <h3 class="font-medium">Tensors in Algebraic Statistics</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">How does a deeper understanding of tensor geometry allow for an understanding and methods in Algebraic Statistics.</p>
+          </li>
+          <li class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
+            <h3 class="font-medium">Degrees of freedom in matrix completion problems</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Are all entries in a matrix equally important? How do different methods affect the geometry of solutions in matrix approximations? And can we develop a notion of effective rank?</p>
+          </li>
+          <li class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
+            <h3 class="font-medium">Recovering discrete spectra in random matrices</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Where the law of large numbers breaks down, can machine learning techniques bridge the gap?</p>
+          </li>
+          <li class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
+            <h3 class="font-medium"><font color="#1d9936">Open to collaborations</font></h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">If you’d like to collaborate or just talk about research, don't hesitate to reach out!</p>
+          </li>
         </ul>
       </section>
 
-      <!-- Contact -->
-      <section id="contact" class="py-10 border-t border-slate-200/70 dark:border-slate-800">
-        <h2 class="text-2xl font-semibold">Contact</h2>
-        <div class="mt-3 grid md:grid-cols-2 gap-4 text-sm">
-          <div class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl">
-            <p><strong>Email:</strong> luis.sierra@mail.utoronto.ca</p>
-            <p><strong>Office:</strong> 700 University Avenue, 9th floor, Desk 9145-10</p>
-            <p><strong>Links:</strong> <a class="underline" href="https://scholar.google.com/citations?user=iPLkrMoAAAAJ&hl=en">Google Scholar</a> · <a class="underline" href="#">ORCID</a> · <a class="underline" href="https://github.com/luis-sierra-muntane">GitHub</a> · <a class="underline" href="https://www.linkedin.com/in/luis-sierra-muntan%C3%A9-670103b6/">Linkedin</a></p>
-          </div>
-          <form class="p-4 border border-slate-200 dark:border-slate-800 rounded-2xl" action="https://formspree.io/f/xyzpvvne" method="POST">
-            <input type="text" name="_gotcha" class="hidden" aria-hidden="true">
-            <input type="hidden" name="_subject" value="New message from website">
-            <input type="hidden" name="_redirect" value="https://luis-sierra-muntane.github.io/thank-you.html">
-            <label class="block mt-2 text-sm">Name <input class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent p-2" name="name" required></label>
-            <label class="block mt-2 text-sm">Email <input type="email" class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent p-2" name="email" required></label>
-            <label class="block mt-2 text-sm">Message <textarea class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent p-2" name="message" rows="4" required></textarea></label>
-            <button class="mt-3 rounded-xl px-4 py-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900">Send</button>
-          </form>
+      <!-- Publications -->
+      <section id="publications" class="py-10 border-t border-slate-200/70 dark:border-slate-800">
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="text-2xl font-semibold">Publications</h2>
+          <div class="text-sm text-slate-600 dark:text-slate-300"><button id="bibtexToggle" class="underline decoration-dotted">toggle BibTeX</button></div>
         </div>
+        <ol class="mt-5 space-y-5">
+          <!-- Repeat block per paper -->
+          <li class="p-5 border border-slate-200 dark:border-slate-800 rounded-2xl">
+            <div class="flex flex-wrap items-baseline gap-x-2">
+              <span class="font-medium">Tensors en estadística algebraica</span>
+              <span class="text-slate-500 dark:text-slate-400">(Butlletí De La Societat Catalana De Matemàtiques, 2025)</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300"><strong>L. Sierra</strong>, M. Casanellas, P. Zwiernik.</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-sm">
+              <a href="https://revistes.iec.cat/index.php/BSCM/article/view/155883/153321" class="px-3 py-1 rounded-xl border border-slate-200 dark:border-slate-800">PDF</a>
+            </div>
+            <pre class="bibtex mt-3 hidden text-xs overflow-x-auto p-3 bg-slate-50 dark:bg-slate-900 rounded-lg">@article{Sierra_Casanellas_Zwiernik_2025, title={Tensors en estadística algebraica}, url={https://revistes.iec.cat/index.php/BSCM/article/view/155883}, journal={Butlletí de la Societat Catalana de Matemàtiques}, author={Sierra, Luis and Casanellas, Marta and Zwiernik, Piotr}, year={2025}, month={Oct.}, pages={131–169} }
+}</pre>
+          </li>
+          <li class="p-5 border border-slate-200 dark:border-slate-800 rounded-2xl">
+            <div class="flex flex-wrap items-baseline gap-x-2">
+              <span class="font-medium">Tensors in Algebraic Statistics</span>
+              <span class="text-slate-500 dark:text-slate-400">(Conference/Journal, 2024)</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">M. Casanellas, <strong>L. Sierra</strong>, P. Zwiernik.</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-sm">
+              <a href="https://arxiv.org/abs/2411.14080" class="px-3 py-1 rounded-xl border border-slate-200 dark:border-slate-800">PDF</a>
+              <a href="#" class="px-3 py-1 rounded-xl border border-slate-200 dark:border-slate-800">Code</a>
+              <a href="/assets/Ottawa_May_2025_Presentation.pdf" class="px-3 py-1 rounded-xl border border-slate-200 dark:border-slate-800">Talk</a>
+            </div>
+            <pre class="bibtex mt-3 hidden text-xs overflow-x-auto p-3 bg-slate-50 dark:bg-slate-900 rounded-lg">@inproceedings{your2024paper,
+  title={Paper Title One},
+  author={Author A and Your Name and Author C},
+  booktitle={Venue},
+  year={2024}
+}</pre>
+          </li>
+        </ol>
       </section>
 
       <footer class="py-10 border-t border-slate-200/70 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400">
